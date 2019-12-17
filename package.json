@@ -1,0 +1,32 @@
+{
+  "name": "gui_storage",
+  "version": "0.0.1",
+  "description": "An user interface for storage management",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/damienbunlet/Storage-Management-RAN"
+  },
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "keywords": [
+    "raspberry",
+    "arduino",
+    "storage",
+    "diy"
+  ],
+  "author": "BUNLET Damien",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "mongoose": "^5.8.1",
+    "path": "^0.12.7",
+    "serialport": "^8.0.5",
+    "serve-favicon": "^2.5.0",
+    "socket.io": "^2.3.0",
+    "url": "^0.11.0"
+  }
+}
