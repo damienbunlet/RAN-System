@@ -63,25 +63,36 @@ mongoose.connect(dbUrl, {useNewUrlParser: true, useUnifiedTopology: true})
  * You can add for exemple a mininum quantity to your schema to be inform when
  * your stock is low.
  *
- * The storage part is here to specify how many columns
+ * The drawer part is here to specify how many compartments compose the drawer
+ * and when it is in storage unit
+ *
+ * The storage part is here to specify how many columns and rows compose the
+ * storage unit
  */
 
 var componentSchema = new mongoose.Schema({
   name:         {type: String, required: true},
   quantity:     {type: Number, required: true},
-  minquantity:  {type: Number, required: false},
+  minquantity:  {type: Number, required: true},
   componentID:  {type: Number, required: true},
   storageID:    {type: Number, required: true},
-  column:       {type: Number, required: true},
-  row:          {type: Number, required: true}
+  drawerID:     {type: Number, required: true},
+  compartmentID:  {type: Number, required: true}
 });
 
 var Component = mongoose.model('Component', componentSchema);
 
+var drawerSchema = new mongoose.Schema({
+  storageID:      {type: Number, required: true},
+  drawerID:       {type: Number, required: true},
+  compartment:    {type: Number, required: true}
+});
+
+var Drawer = mongoose.model('Drawer', drawerSchema);
+
 var storageSchema = new mongoose.Schema({
-  storageID: {type: Number, required: true},
-  columns:   {type: Number, required: true},
-  rows:      {type: Number, required: true},
+  storageID:    {type: Number, required: true},
+  disposition:  {type: Array, required: true}
 });
 
 var Storage = mongoose.model('Storage', storageSchema);
@@ -98,7 +109,7 @@ var Storage = mongoose.model('Storage', storageSchema);
 server.get('/', function(req, res) {
   var title = 'Storage Management GUI';
   var storages = Storage.find();
-  var components = Components.find();
+  var components = Component.find();
 
   res.render('index.ejs', {
     title: title,

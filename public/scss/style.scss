@@ -1,0 +1,65 @@
+// ---------------------------
+//  STYLE write BUNLET Damien
+// ---------------------------
+
+// Configuration
+
+@import "reset";
+@import "variables";
+
+// Layout & components
+
+@import "grid";
+@import "fonts";
+
+body, html {
+  font-family: 'Lato', sans-serif !important;
+}
+
+.container {
+
+  .header {
+    color: white;
+    background-color: #111111;
+    padding: 0 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    .title {
+      line-height: 64px;
+      font-size: 32px;
+    }
+
+    .author {
+      line-height: 64px;
+      font-size: 16px;
+    }
+  }
+
+  .content {
+    margin-top: 16px;
+
+    #col-search {
+      background-color: #151515;
+      padding: 0;
+
+      input {
+        width: calc(100% - 32px);
+        font-size: 16px;
+        padding: 16px;
+        border: none;
+        border-radius: 0;
+      }
+    }
+
+    #col-manage {
+      background-color: #684357;
+    }
+
+    #col-show {
+      background-color: #684439;
+    }
+  }
+}

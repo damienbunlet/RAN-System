@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%= title %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/c55ffa2d10.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <!-- HEADER -->
+      <div class="header">
+        <span class="title">Storage Management <strong>RAN</strong></span>
+        <span class="author">developed by BUNLET Damien</span>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="content">
+        <div class="row">
+          <!-- Column destinated to search components -->
+          <div id="col-search" class="col-xs-12 col-lg-4">
+            <input id="search" ondragover=""type="text" name="search" value="" placeholder="Search ..." onkeyup="Search()">
+            <ul id="componentsList">
+              <% components.forEach(function(component) { %>
+                <li><a href="#"><%= component.name %></a></li>
+              <% }); %>
+            </ul>
+          </div>
+          <!-- Column destinated to manage stockage (component, drawer and storage unit)-->
+          <div id="col-manage" class="col-xs-12 col-lg-4">
+
+          </div>
+          <!-- Column destinated to show your storage unit -->
+          <div id="col-show" class="col-xs-12 col-lg-4">
+
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="footer">
+
+      </div>
+
+    </div>
+
+    <script type="text/javascript">
+
+    </script>
+
+  </body>
+</html>
