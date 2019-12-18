@@ -8,7 +8,8 @@
     "url": "https://github.com/damienbunlet/Storage-Management-RAN"
   },
   "scripts": {
-    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+    "test": "echo \\\"Error: no test specified\\\" && exit 1",
+    "scss": "node-sass --watch public/scss -o public/css"
   },
   "keywords": [
     "raspberry",
@@ -23,6 +24,7 @@
     "express": "^4.17.1",
     "fs": "0.0.1-security",
     "mongoose": "^5.8.1",
+    "node-sass": "^4.13.0",
     "path": "^0.12.7",
     "serialport": "^8.0.5",
     "serve-favicon": "^2.5.0",
