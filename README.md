@@ -10,7 +10,7 @@ Initially, I create this project to have an application to manage the storage of
 > ### Tables of contents
 > * [Quick start](#quick-start)
 > * [Status](#status)
-> * [What's included](#what-s-included)
+> * [What's included](#whats-included)
 > * [Bugs and feature requests](#bugs-and-feature-requests)
 > * [Documentation](#documentation)
 > * [Contributing](#Contributing)
