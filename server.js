@@ -20,8 +20,8 @@ var SerialPort = require('serialport');
  * Mac OS x   -> '/dev/cu.usbmodem1451'
  * Linux      -> '/dev/sda4'
  */
-var usbSerial = 'COM4';
-var arduino = new SerialPort(usbSerial, { baudRate: 115200 })
+//var usbSerial = 'COM4';
+//var arduino = new SerialPort(usbSerial, { baudRate: 115200 })
 
 // Creation of the Express application
 var server = express();

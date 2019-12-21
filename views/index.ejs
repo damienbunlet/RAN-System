@@ -6,44 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="https://kit.fontawesome.com/c55ffa2d10.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
 
     <div class="container">
-
-      <!-- HEADER -->
-      <div class="header">
-        <span class="title">Storage Management <strong>RAN</strong></span>
-        <span class="author">developed by BUNLET Damien</span>
-      </div>
-
-      <!-- CONTENT -->
-      <div class="content">
-        <div class="row">
-          <!-- Column destinated to search components -->
-          <div id="col-search" class="col-xs-12 col-lg-4">
-            <input id="search" ondragover=""type="text" name="search" value="" placeholder="Search ..." onkeyup="Search()">
-            <ul id="components-list">
-            
-            </ul>
+      <div class="row">
+        <!-- Left panel with Header, Menu, and Footer-->
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-2 leftside">
+          <div class="header">
+            <span><strong>ran</strong>system&trade;</span>
           </div>
-          <!-- Column destinated to manage stockage (component, drawer and storage unit)-->
-          <div id="col-manage" class="col-xs-12 col-lg-4">
 
+          <div class="navigation">
+            <span>menu</span>
+            <div class="menu">
+              <a href="/dashboard" class="active"><i class="material-icons">widgets</i><span>Dashboard</span></a>
+              <a href="/domotic"><i class="material-icons">home</i><span>Domotic</span></a>
+              <a href="/storage-management"><i class="material-icons">dns</i><span>Storage Management</span></a>
+              <a href="/file-management"><i class="material-icons">folder</i><span>File Management</span></a>
+              <a href="/message"><i class="material-icons">chat_bubble</i><span>Message</span></a>
+              <a href="/email"><i class="material-icons">email</i><span>Email</span></a>
+            </div>
+            <span>account</span>
+            <div class="account">
+              <a href="/settings"><i class="material-icons">settings</i><span>Settings</span></a>
+              <a href="/logout"><i class="material-icons">power_settings_new</i><span>Logout</span></a>
+            </div>
           </div>
-          <!-- Column destinated to show your storage unit -->
-          <div id="col-show" class="col-xs-12 col-lg-4">
+
+          <div class="footer">
 
           </div>
         </div>
+
+        <!-- Main content of the page -->
+        <div class="col-xs col-sm col-md col-lg content">
+
+        </div>
+
+        <!-- Right panel with Last activity field -->
+        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 rightside">
+
+        </div>
       </div>
-
-      <!-- FOOTER -->
-      <div class="footer">
-
-      </div>
-
     </div>
 
     <script type="text/javascript">

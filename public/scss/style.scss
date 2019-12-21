@@ -13,53 +13,82 @@
 @import "fonts";
 
 body, html {
-  font-family: 'Lato', sans-serif !important;
+  font-family: 'Segoe UI', sans-serif !important;
+  height: 100%;
+  letter-spacing: 0.1em;
 }
 
 .container {
+  height: 100%;
+  .row {
+    height: 100%;
+    .leftside {
+      padding: 0 !important;
+      color: $white;
+      background-color: $black-cyan;
+      background-image: linear-gradient(to bottom right, $black-cyan, $dark-cyan);
+      .header {
+        height: 160px;
+        font-size: 32px;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-around;
 
-  .header {
-    color: white;
-    background-color: #111111;
-    padding: 0 1em;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-
-    .title {
-      line-height: 64px;
-      font-size: 32px;
-    }
-
-    .author {
-      line-height: 64px;
-      font-size: 16px;
-    }
-  }
-
-  .content {
-    margin-top: 16px;
-
-    #col-search {
-      background-color: #151515;
-      padding: 0;
-
-      input {
-        width: calc(100% - 32px);
-        font-size: 16px;
-        padding: 16px;
-        border: none;
-        border-radius: 0;
+        span {
+          strong {
+            font-weight: 800;
+          }
+        }
       }
-    }
 
-    #col-manage {
-      background-color: #684357;
-    }
+      .navigation {
+        height: calc(100% - 320px);
 
-    #col-show {
-      background-color: #684439;
+        span {
+          margin: 0 16px;
+          display: block;
+          text-transform: uppercase;
+          font-size: 16px;
+          line-height: 80px;
+        }
+
+        .menu, .account {
+          display: flex;
+          flex-direction: column;
+          a {
+            width: calc(100% - 32px);
+            height: 40px;
+            padding-left: 32px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: $white;
+            text-decoration: none;
+            line-height: 24px;
+
+            span {
+              text-transform: none;
+              line-height: normal;
+            }
+
+            i {
+              margin-right: 16px;
+            }
+
+            &:hover, &.active {
+              color: $black-cyan;
+              background-color: $white;
+            }
+          }
+        }
+      }
+
+      .footer {
+        height: 160px;
+      }
     }
   }
 }
