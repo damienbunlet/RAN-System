@@ -33,8 +33,8 @@ Several quick start options are available:
 
 First, you need to install the latest version of Node.js and MongoDB Compass.
 
-* [Node.js](#https://nodejs.org/)
-* [MongoDB](#https://www.mongodb.com/download-center/compass) (It isn't necessary but it can help if you have some problems)
+* [Node.js](https://nodejs.org/)
+* [MongoDB](https://www.mongodb.com/download-center/compass) (It isn't necessary but it can help if you have some problems)
 
 Secondly, you need to install all the necessary packages. To do this, write the following command to the location of your file:
 
@@ -61,7 +61,7 @@ Secondly, you need to install all the necessary packages. To do this, write the 
 ## Creators
 
 Damien Bunlet
-* [https://github.com/damienbunlet](#https://github.com/damienbunlet)
+* [https://github.com/damienbunlet](https://github.com/damienbunlet)
 
 ## Thanks
 
