@@ -109,12 +109,12 @@ var Storage = mongoose.model('Storage', storageSchema);
 server.get('/', function(req, res) {
   var title = 'Storage Management GUI';
   var storages = Storage.find();
-  var components = Component.find();
+  //var components = Component.find();
 
   res.render('index.ejs', {
     title: title,
     storages: storages,
-    components: components
+    //components: components
   });
 });
 
