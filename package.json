@@ -29,7 +29,7 @@
     "path": "^0.12.7",
     "serialport": "^8.0.5",
     "serve-favicon": "^2.5.0",
-    "socket.io": "^2.3.0",
+    "socket.io": "^2.5.0",
     "url": "^0.11.0"
   }
 }
